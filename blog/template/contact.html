@@ -1,0 +1,74 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body%}
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* 
+body { background:rgb(30,30,40); } */
+body{background-image: url("{% static 'images/c6.jpeg' %}");background-repeat: no-repeat;background-size: cover;}
+form { max-width:420px; margin:50px auto;  font-family: 'Architects Daughter', cursive; }
+
+.feedback-input {
+  /* color:white; */
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  /* color:white; */
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  font-family: 'Architects Daughter', cursive;
+}
+[type="submit"]:hover { background:green; }
+</style>
+
+<center >
+  <form action="/contact" method="post">{% csrf_token %}    
+        <input  type="text" class="feedback-input" placeholder="Name" name="name">   
+        <input  type="text" class="feedback-input" placeholder="Email" name="email">
+        <textarea  class="feedback-input" placeholder="desc" name="desc"></textarea>
+        <input type="submit" value="SUBMIT"/>
+      </form>
+
+</center>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{%endblock%}

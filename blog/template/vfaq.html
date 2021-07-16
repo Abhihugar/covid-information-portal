@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+ { % load static % }
+
+ {% block body%}
+ <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<h1 class="head">covid-19 vaccine FAQS</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .head{
+        text-transform: capitalize;
+        font-size: x-large;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bolder;
+        margin-left: 5cm;
+        
+    }
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: large;
+  transition: 0.4s;
+  margin-right: 5cm;
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  text-transform: capitalize;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(177, 197, 64, 0.329);
+}
+
+.accordion:after {
+  content: '\002B';
+  color:white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 520;
+
+}
+.plus{
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: 2cm;
+}
+</style>
+</head>
+<body>
+
+<div class="plus">
+
+    <button class="accordion">is there a vaccine for covid 19</button>
+    <div class="panel">
+    <p>Yes there are now several vaccines that are in use. The first mass vaccination programme started in early December 2020 and the number of vaccination doses administered is updated on a daily basis here. At least 13 different vaccines (across 4 platforms) have been administered.<br>
+
+    The Pfizer/BioNtech Comirnaty vaccine was listed for WHO Emergency Use Listing (EUL) on 31 December 2020. The SII/Covishield and AstraZeneca/AZD1222 vaccines (developed by AstraZeneca/Oxford and manufactured by the State Institute of India and SK Bio respectively) were given EUL on 16 February. The Janssen/Ad26.COV 2.S developed by Johnson & Johnson, was listed for EUL on 12 March 2021. The Moderna COVID-19 vaccine (mRNA 1273) was listed for EUL on 30 April 2021 and the Sinopharm COVID-19 vaccine was listed for EUL on 7 May 2021. The Sinopharm vaccine is produced by Beijing Bio-Institute of Biological Products Co Ltd, subsidiary of China National Biotec Group (CNBG).<br>
+
+    For further information, <a href="https://www.who.int/news-room/q-a-detail/coronavirus-disease-covid-19" style="color: skyblue;">see here. </a><br>
+
+    WHO is on track to EUL other vaccine products through June. 
+
+    The products and progress in regulatory review by WHO is provided by WHO and updated regularly. The document is provided here.
+
+    Once vaccines are demonstrated to be safe and efficacious, they must be authorized by national regulators, manufactured to exacting standards, and distributed. WHO is working with partners around the world to help coordinate key steps in this process, including to facilitate equitable access to safe and effective COVID-19 vaccines for the billions of people who will need them. More information about COVID-19 vaccine development is available here.</p>
+    </div>
+    <hr>
+
+    <button class="accordion">when will covid vaccines be ready for distribution</button>
+    <div class="panel">
+        <p>The first COVID-19 vaccines have already begun to be introduced in countries. Before COVID-19 vaccines can be delivered:</p><ul type="disc"><li>The vaccines must be proven safe and effective in large (phase III) clinical trials.&nbsp; Some COVID-19 vaccine candidates have completed their phase III trials, and&nbsp;<a href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines">many other potential vaccines are being developed</a>.</li><li>Independent reviews of the efficacy and safety evidence is required for each vaccine candidate, including regulatory review and approval in the country where the vaccine is manufactured, before WHO considers a vaccine candidate for&nbsp;prequalification.
+            Part of this process also involves the&nbsp;Global Advisory Committee on Vaccine Safety.</li><li>In addition to review of the data for regulatory purposes, the evidence must also be reviewed for the purpose of policy recommendations on how the vaccines should be used.</li><li><a href="392406B5-1A54-4E17-B66B-5F44CA2DA775">An external panel of experts</a>&nbsp;convened
+     by WHO, called the Strategic Advisory Group of Experts on Immunization (SAGE), analyzes the results from clinical trials, along with evidence on the disease, age groups affected, risk factors for disease, programmatic use, and other information.
+            SAGE then recommends whether and how the vaccines should be used.</li><li>Officials in individual countries decide whether to approve the vaccines for national use and develop policies for how to use the vaccines in their country based on the WHO recommendations.</li><li>The vaccines must be manufactured in large quantities, which is a major and unprecedented challenge &ndash; all the while continuing to produce all the other important life-saving vaccines already in use.</li><li>As a final step, all approved vaccines will require distribution through a complex logistical process, with rigorous stock management and temperature control.</li></ul><p>WHO is working with partners around&nbsp;the world to accelerate every step of this process, while also ensuring the highest safety standards are met. More information is available&nbsp;<a href="/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines" style="color: skyblue;" data-sf-ec-immutable="">here.</a></p>
+                                </p>
+    </div><hr>
+
+    <button class="accordion"> Will COVID-19 vaccines provide long-term protection?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>Because COVID vaccines have only been developed in the past months, it&rsquo;s too early to know the duration of protection of COVID-19 vaccines. Research is ongoing to answer this question. However, it&rsquo;s encouraging that available data suggest that most people who recover from COVID-19 develop an immune response that provides at least some period of protection against reinfection &ndash; although we&rsquo;re still learning how strong this protection is, and how long it lasts.</p>
+        </p>
+    </div><hr>
+    <button class="accordion">
+        How quickly could COVID-19 vaccines stop the pandemic?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>The impact of COVID-19 vaccines on the pandemic will depend on several factors. These include the effectiveness of the vaccines; how quickly they are approved, manufactured, and delivered; the possible development of other variants and how many people get vaccinated</p>
+<p>Whilst trials have shown several COVID-19 vaccines to have high levels of efficacy, like all other vaccines, COVID-19 vaccines will not be 100% effective. WHO is working to help ensure that approved vaccines are as effective as possible, so they can have the greatest impact on the pandemic.</p>
+        </p>
+    </div><hr>
+
+    <button class="accordion">   What types of COVID-19 vaccines are being developed? How would they work?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>Scientists around the world are developing&nbsp;<a href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines">many potential vaccines</a>&nbsp;for COVID-19. These vaccines are all designed to teach the body&rsquo;s immune system to safely recognize and block the virus that causes COVID-19.</p><p>Several different types of potential vaccines for COVID-19 are in development, including:</p><ul type="disc"><li><em>Inactivated or weakened virus vaccines</em>, which use a form of the virus that has been inactivated or weakened so it doesn&rsquo;t cause disease, but still generates an immune response.</li><li><em>Protein-based vaccines</em>, which use harmless fragments of proteins or protein shells that mimic the COVID-19 virus to safely generate an immune response.</li><li><em>Viral vector vaccines</em>, which use a safe virus that cannot cause disease but serves as a platform to produce coronavirus proteins to generate an immune response.<em></em></li><li><em>RNA and DNA vaccines</em>, a cutting-edge approach that uses genetically engineered RNA or DNA to generate a protein that itself safely prompts an immune response.</li></ul><p>For more information about all COVID-19 vaccines in development, see&nbsp;<a href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines">this WHO publication</a>, which is being updated regularly.&nbsp;</p>
+        </p>
+    </div><hr>
+    <button class="accordion">Will other vaccines help protect me from COVID-19?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>Currently, there is no evidence that any other vaccines, apart from those specifically designed for the SARS-Cov-2 virus, &nbsp;will protect against COVID-19.</p><p>However, scientists are studying whether some existing vaccines &ndash; such as the Bacille Calmette-Gu&eacute;rin (BCG) vaccine, which is used to prevent tuberculosis &ndash; are also effective for COVID-19.&nbsp;WHO will evaluate evidence from these studies when available.</p>
+        </p>
+    </div><hr>
+    <button class="accordion"> What are the benefits of getting vaccinated?</button>
+    <div class="panel">
+        p class="sf-accordion__summary">
+        <p dir="ltr">The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the SARS-Cov-2 virus.&nbsp; Developing immunity through vaccination means there is a reduced risk of developing the&nbsp; illness and its consequences.
+This immunity helps you fight the virus if exposed. Getting vaccinated may also protect people around you,&nbsp;because if you are protected from getting infected and from disease, you are less likely to infect someone else. This is particularly important
+to protect people at increased risk for severe illness from COVID-19, such as healthcare providers, older or elderly adults, and people with other medical conditions.</p>
+    </p>
+    </div><hr>
+    <button class="accordion"> Who should get the COVID-19 vaccines?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p><div>The COVID-19 vaccines are safe for most people 18 years and older, including those with pre-existing conditions of any kind, including auto-immune disorders. These conditions include: hypertension, diabetes, asthma, pulmonary, liver and kidney disease, as well as chronic infections that are stable and controlled.&nbsp;</div><div>If supplies are limited in your area, discuss your situation with your care provider if you:</div><ul><li>Have a compromised immune system</li><li>Are pregnant or nursing your baby</li><li>Have a history of severe allergies, particularly to a vaccine (or any of the ingredients in the vaccine)</li><li>Are severely frail&nbsp;</li></ul><div><br /></div></p>
+        </p>
+    </div><hr>
+
+    <button class="accordion">Can we stop taking precautions after being vaccinated?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <div><p>Vaccination protects you from getting seriously ill and dying from COVID-19. For the first fourteen days after getting a vaccination, you do not have significant levels of protection, then it increases gradually. For a single dose vaccine, immunity will generally occur two weeks after vaccination. For two-dose vaccines, both doses are needed to achieve the highest level of  immunity possible.&nbsp;</p><p><span style="background-color:initial;color:#313131;font-size:inherit;font-family:inherit;text-align:inherit;text-transform:inherit;white-space:inherit;word-spacing:normal;caret-color:auto;">While a COVID-19 vaccine will protect you from serious illness and death, we still don&rsquo;t know the extent to which it keeps you from being infected and passing the virus on to others. To help keep others safe, continue to maintain at least a 1-metre distance from others, cover a cough or sneeze in your elbow, clean your hands frequently and wear a mask, particularly in enclosed, crowded or poorly ventilated spaces. Always follow guidance from local authorities based on the situation and risk where you live.</span><br /></p></div><div><br /></div>
+        </p>
+    </div><hr>
+    <button class="accordion">Can I have the second dose with a different vaccine than the first dose?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            Clinical trials in some countries are looking at whether you can have a first dose from one vaccine and a second dose from a different vaccine. There isn't enough data yet to recommend this type of combination.&nbsp;
+        </p>
+    </div><hr>
+    <button class="accordion">Can the COVID-19 vaccine cause a positive test result for the disease, such as for a PCR or antigen test?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>No, the COVID-19 vaccine will not cause a positive test result for a COVID-19 PCR or antigen laboratory test. This is because the tests check for active disease and not whether an individual is immune or not. However, because the COVID-19 vaccine prompts an immune response, it may be possible to test positive in an antibody (serology) test that measures COVID-19 immunity in an individual.</p>
+        </p>
+    </div><hr>
+    <button class="accordion"> Should I be vaccinated if I have had COVID-19?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            Even if you have already had COVID-19, you should be vaccinated when it is offered to you. The protection that someone gains from having COVID-19 will vary from person to person, and we also don&rsquo;t know how long natural immunity might last.&nbsp;
+        </p>
+    </div><hr>  <button class="accordion">Do the vaccines protect against variants?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p><div>The COVID-19 vaccines are expected to provide at least some protection against new virus variants and are effective at preventing serious illness and death. That&rsquo;s because these vaccines create a broad immune response, and any virus changes or mutations should not make vaccines completely ineffective. If any of these vaccines become less effective against one or more variants, it will be possible to change the composition of the vaccines to protect against these variants. Data continues to be collected and analysed on new variants of the COVID-19 virus.&nbsp;</div><div><br /></div><div>While we are learning more, we need to do everything possible to stop the spread of the virus in order to prevent mutations that may reduce the efficacy of existing vaccines. This means staying at least 1 metre away from others, covering a cough or sneeze in your elbow, frequently cleaning your hands, wearing a mask and avoiding poorly ventilated rooms or opening a window.&nbsp;</div><div><br /></div><div>For more information, see <a href="https://www.who.int/news-room/feature-stories/detail/the-effects-of-virus-variants-on-covid-19-vaccines">The effects of virus variants on COVID-19 vaccines.<div></div></a></div></p>
+        </p>
+    </div><hr>
+    <button class="accordion">  Is the vaccine safe for children?</button>
+    <div class="panel">
+        <p class="sf-accordion__summary">
+            <p>Vaccines are usually tested in adults first, to avoid exposing children who are still developing and growing. COVID-19 has also been a more serious and dangerous disease among older populations. Now that the vaccines have been determined to be safe for adults, they are being studied in children. Once those studies have been completed, we should know more and guidelines will be developed. </p><p>In the meantime, make sure children continue to physical distance from others, clean their hands frequently, sneeze and cough into their elbow and wear a mask if age appropriate.</p><p>&nbsp;</p>
+        </p>
+    </div><hr>
+
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
+ {%endblock%}

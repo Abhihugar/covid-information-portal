@@ -1,0 +1,396 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body%}
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<style>
+  body{
+    background: url("{% static 'images/jjkkjjkjkjkjkjkl.jpeg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .head{
+     
+    font-size: xx-large;
+    font-family: 'Architects Daughter', cursive;
+    background-color: skyblue;
+    width: 100%;
+    height: 2cm;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1cm;
+      
+
+  }
+  .head h1{
+    margin-left: 8cm;
+    margin-top: 0.6cm;
+    color: black;
+
+  }
+  .head h2{
+    margin-left: 25cm;
+    top: 125px;
+    position: absolute;
+    margin-top: 0.6cm;
+    color: black;
+  }
+  .active{
+    background-color: rgb(158, 218, 193);
+    margin-right: 23cm;
+    margin-left: 6cm;
+    border-radius: 2cm;
+    height: 2cm;
+  }
+  .active h1{
+    margin-left: 2cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+  
+  }
+  .active p{
+    margin-left: 1.8cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  .active1{
+    background-color: rgba(209, 54, 7, 0.39);
+    margin-top: 0.5cm;
+    margin-right: 23cm;
+    margin-left: 6cm;
+    border-radius: 2cm;
+    height: 2cm;
+
+  }
+  .active1 h1{
+    margin-left: 2cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+  }
+  .active1 p{
+    margin-left: 1cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+ .active2{
+  background-color: rgb(108, 216, 162);
+    margin-top: 0.5cm;
+    margin-right: 23cm;
+    margin-left: 6cm;
+    border-radius: 2cm;
+    height: 2cm;
+
+ }
+ .active2 h1{
+    margin-left: 2cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+  }
+  .active2 p{
+    margin-left: 1.5cm;
+    font-size: x-large;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  .confirm{
+    float:right;
+    top: 250px;
+    background-color: rgb(125, 186, 221);
+    margin-right: 5cm;
+    height: 2cm;
+    border-radius: 2cm;
+    width: 22%;
+    position: absolute;
+    left: 22cm;
+  }
+  .confirm h1{
+    margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+  }
+  .confirm p{
+    margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+  }
+  .confirm1{
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 22cm;
+    height: 2cm;
+    width: 22%;
+    float: right;
+    top: 350px;
+    border-radius: 2cm;
+
+    
+
+}
+.confirm1 h1{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+}
+.confirm1 p{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.confirm2{
+  background-color: khaki;
+  position: absolute;
+  left: 22cm;
+  height: 2cm;
+  width: 22%;
+  float: right;
+  top: 450px;
+  border-radius: 2cm;
+}
+.confirm2 h1{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.confirm2 p{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+}
+    
+.confirm3{
+  position: absolute;
+  background-color: rgb(158, 177, 231);
+  height: 2cm;
+  width: 22%;
+  left: 22cm;
+  border-radius: 2cm;
+  margin-top: 0.6cm;
+margin-bottom: 2cm;
+}
+.confirm3 h1{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.confirm3 p{
+  margin-left: 2.4cm;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+}
+.total{
+  margin-bottom: 4cm;
+}
+.dash{
+  height: 10%;
+  width: 25%;
+  background-color: rgba(77, 207, 54, 0.739);
+  font-weight: bolder;
+  font-family: 'Architects Daughter', cursive;
+  border-radius: 2cm;
+  font-size: x-large;
+  margin-bottom: 0.5cm;
+  border-color: hotpink;
+  margin-left: 1cm;
+}
+    
+.details{
+
+border: lightgreen;
+height: 30%;
+width: 25%;
+
+margin-left: 1cm;
+margin-bottom: 1cm;
+box-sizing: border-box;
+font-weight: bolder;
+font-size: x-large;
+font-family: 'Architects Daughter', cursive;
+border:rgb(136, 219, 143);
+border-width: 10px;
+border-style: ridge;
+color: whitesmoke;
+
+}
+.img{
+  position: absolute;
+  left: 12cm;
+  top: 790px;
+  border-radius: 2cm;
+}
+.img h1{
+  font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+}
+.img p{
+  font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: capitalize;
+}
+.img2{
+  position: absolute;
+  left: 22cm;
+  top: 790px;
+}
+.img2 p{
+  font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: capitalize;
+}
+.img2 h1{
+  font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+}
+.register{
+  text-transform: uppercase;
+  position: absolute;
+  left: 28cm;
+  top: 830px;
+  background-color: green;
+  border: blue;
+  border-width: 2px;
+  border-style: ridge;
+  height: 10%;
+  width: 20%;
+  border-radius: 25px;
+  color: whitesmoke;
+  font-size: large;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+
+ 
+
+</style>
+<body>
+<div class="total">
+        <div class="head"> 
+          <h1>india</h1>
+          <h2>karnataka</h2>
+          <!-- <div class="vl"></div> -->
+        </div>
+
+
+        <section>
+              <div class="active">
+                    <h1>464357</h1>
+                    <p>active cases</p>
+            
+              </div>
+        </section>
+        <section>
+            <div class="active1">
+                  <h1>29752294</h1>
+                  <p>cured/discharged</p>
+          
+            </div>
+        </section>
+
+
+        <section>
+            <div class="active2">
+                  <h1>403281</h1>
+                  <p class="death">deaths</p>
+          
+            </div>
+        </section>
+
+        <!-- karnatak -->
+        <section>
+            <div class="confirm">
+                  <h1>2856491</h1>
+                  <p class="death">Confirmed</p>
+          
+            </div>
+        </section>
+        <section>
+              <div class="confirm1">
+                    <h1>41996</h1>
+                    <p class="death">Active</p>
+              
+              </div>
+        </section>
+        <section>
+              <div class="confirm2">
+                  <h1>2779038</h1>
+                  <p class="death">Recovered</p>
+            
+              </div>
+        </section>
+        <section>
+              <div class="confirm3">
+                  <h1>35434</h1>
+                  <p class="death">Deceased</p>
+            
+              </div>
+        </section>
+
+
+</div>
+<a href="https://news.google.com/covid19/map?hl=en-IN&mid=%2Fm%2F03rk0&gl=IN&ceid=IN%3Aen">
+  <button class="dash">
+    covid-19 india dashboard
+
+  </button>
+</a>
+<h1>LAST UPDATED 06/07/2021</h1>
+<hr style="height: 2cm;color: rgb(0, 64, 255);">
+
+
+<h1 class="details">vaccine coverage details  30/5/2021</h1>
+<div class="img">
+    <img src="{%static 'images/vaccine564.png'%}" alt="image not found" style="height: 2cm;width: 2cm;">
+    <p>today</p>
+    <h1>125156</h1>
+</div>
+
+<div class="img2">
+
+  <img src="{%static 'images/vaccine2.png'%}" alt="image not found" style="height: 2cm;width: 2cm;">
+  <p>cumulative count</p>
+  <h1>13342546</h1>
+</div>
+
+<a href="https://selfregistration.cowin.gov.in/"><button class="register">covid vaccine registration</button></a>
+
+<hr style="height: 2cm;">
+
+<p>
+  {{blogn}}
+
+</p>
+ 
+  
+</body>
+
+
+
+
+{%endblock%}

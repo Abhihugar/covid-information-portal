@@ -1,0 +1,269 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block body%}
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<style>
+    .head{
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'Architects Daughter', cursive;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    .image img{
+        height: 50%;
+        width:65%;
+        margin-bottom: 1cm;
+        align-items: center;
+        border-radius: 1.5cm;
+        margin-left: 6cm;
+        margin-right: 3cm;
+        
+    
+    }
+    .disease{
+        font-family: 'Architects Daughter', cursive;
+        font-size: large;
+        font-weight: 600;
+    }
+    .accurate{
+        text-align: center;
+        text-transform: capitalize;
+        font-size:xx-large;
+        font-family: 'Architects Daughter', cursive;
+        margin-top: 0.9cm;
+        font-weight: bold;
+    }
+    .rapid{
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bold;
+        font-size: large;
+        margin-left: 2cm;
+        margin-right: 2cm;
+
+    }
+    .vacccine img{
+        background-size: cover;
+        height:10%;
+        width: 100%;
+        margin-bottom: 1.5cm;
+    }
+    .register{
+        position:absolute;
+        top: 92cm;
+        right: 70%;
+        left: 70%;
+        background-color: rgb(248, 98, 106);
+        border-radius: 2cm;
+        height: 10%;
+        width: 20%;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .covax{
+        position: absolute;
+     
+        margin-right: 10cm;
+        top:90cm;
+        /* height: 10%;
+        width: 20%; */
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: 'Architects Daughter', cursive;
+     
+        border-radius: 1.3cm;
+      
+        margin-right: 20cm;
+        margin-left: 1.5cm;
+       
+     
+       
+        
+    }
+    .para{
+        margin-right: 15cm;
+        margin-left: 0.9cm;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bolder;
+        
+    }
+    .frame1 iframe{
+            margin-top: 9cm;
+            margin-bottom: 5cm;
+            margin-left: 4cm;
+            position: absolute;
+            top: 100cm;
+            left: 50%;
+            bottom: 50cm;
+            /* border-radius: 20px; */
+            
+    }
+    .para1{
+        margin-right: 15cm;
+        margin-left: 0.9cm;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bolder;
+        margin-bottom: 1.5cm;
+    }
+    .imag1 img{
+        height: 5cm;
+        width: 10cm;
+        margin-top: 9cm;
+            margin-bottom: 5cm;
+            margin-left: 4cm;
+            position: absolute;
+            top: 106cm;
+            left: 50%;
+            bottom: 50cm;
+            border-radius: 50px;
+        
+
+    }
+    .imag2 img{
+        height: 5cm;
+        width: 10cm;
+        margin-top: 10cm;
+            margin-bottom: 5cm;
+            margin-left: 4cm;
+            position: absolute;
+            top: 111cm;
+            left: 50%;
+            bottom: 50cm;
+            border-radius: 50px;
+    }
+   
+</style>
+<div class="head">Are Rapid COVID-19 Test Results<br> Reliable?</div>
+<div class="image"><img src="{% static 'images/rapid1.jpeg' %}" alt="image not found" style="top: 17%;">
+    
+</div>
+<div class="disease">
+    <h1 style="margin-right: 2cm;margin-left: 2cm;"><b style="color: skyblue;">COVID-19 is a respiratory disease </b>that can cause severe illness, especially in people with preexisting health conditions
+    like diabetes, obesity, and high blood pressure. </h1>
+    <h1 style="margin-left: 2cm;margin-right: 2cm;font-size: x-large; color: rgb(51, 153, 59);">Two types of tests are commonly used to test for current infection of SARS-CoV-2, the coronavirus that causes COVID-19.<br></h1>
+
+       <h5 style="margin-left: 2cm;margin-right: 2cm;margin-bottom: 0.9cm;margin-top: 0.5cm;">(i) The first type are polymerase chain reaction (PCR) tests, also called a diagnostic tests or molecular tests. These can help diagnose COVID-19 by detecting genetic material of the coronavirus.
+         PCR tests are considered the gold standard for diagnosis by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/resources/antigen-tests-guidelines.html" style="color: skyblue;">Centers for Disease Control and Prevention (CDC)Trusted Source.</a> </h5>
+       
+       <h5 style="margin-left: 2cm;margin-right: 2cm;"> (ii) The second type are antigen tests. These help diagnose COVID-19 by searching for certain molecules found on the surface of the SARS-CoV-2 virus.
+       
+       Rapid tests are COVID-19 tests that can provide results in as little as   <a href="https://www.fda.gov/consumers/consumer-updates/coronavirus-disease-2019-testing-basics" style="color: skyblue;">15 minutesTrusted Source</a> and don’t require lab analysis. These usually take the form of antigen tests.
+       
+       Although rapid tests can provide quick results, they aren’t as accurate as PCR tests analyzed in a lab. Keep reading to learn how accurate rapid tests are and when they’re used instead of PCR tests.</h5>
+</div>
+<h1 class="accurate">How accurate are rapid COVID-19 tests?</h1>
+<h1 class="rapid">   <a href="https://www.clinisciences.com/lire/newsletter-26/sars-cov-2-covid-19-test-rapide-2264.html" style="color: skyblue;">Rapid COVID-19 tests</a>  often provide results within minutes and don’t need to be analyzed in a 
+    <br>laboratory by a specialist.</h1>
+<h1 class="rapid" style="margin-top: 0.5cm;">Most rapid tests are antigen tests, and sometimes the two terms are used interchangeably.The <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/resources/antigen-tests-guidelines.html" style="color: skyblue;"> 'CDC' Trusted</a> The 
+    Source stopped using the term “rapid” to describe antigen tests, though, because the FDA has also 
+    approved laboratory-based antigen tests.</h1>
+
+    <h1 style="text-align: center;font-size: xx-large;  
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;margin-bottom: 0.4cm;
+    margin: 0.3cm;"
+    >Chances of a rapid test giving a false negative</h1>
+
+    <h1 class="rapid"> <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013705.pub2/full" style="color: skyblue;">A March 2021 review of studies</a> examined the results of 64 test accuracy studies evaluating 
+        commercially produced rapid antigen or molecular tests.</h1>
+
+        <h1 class="rapid">The researchers found that the accuracy of the tests
+             varied considerably. Here’s a look at their findings</h1>
+
+        <h1  class="rapid" style="font-size: x-large;color:brown;">Accuracy for people with COVID-19 symptoms</h1>
+
+        <h1 class="rapid"> For people with symptoms of COVID-19, the tests correctly gave a positive result an <u style="color: indigo;">average of 72 percent of the time. The 95 percent confidence intervals were 63.7 to 79 percent,</u> meaning that the researchers were 95 percent
+             confident that the average fell between these two values.</h1>
+        <h1 class="rapid" style="font-size: x-large;color:rgb(17, 175, 17)">
+            Accuracy for people without COVID-19 symptoms
+        </h1>  
+        <h1 class="rapid">The researchers found that people without   <u> COVID-19 symptoms correctly tested positive in 58.1 percent of rapid tests. The 95 percent confidence intervals were 40.2 to 74.1 percent.</u></h1> 
+        <h1 class="rapid" style="font-size: x-large;color:mediumseagreen;">
+            Accuracy during the first week of symptoms versus the second
+        </h1>  
+        <h1 class="rapid">Rapid tests more accurately provided a positive COVID-19 result when administered during the first week of symptoms. <u> The researchers found that rapid tests correctly identified COVID-19 in an average of 78.3 percent of cases during the first week.</u>
+
+            In the second week, the average dropped to 51 percent..</h1>
+
+            <h1 class="rapid" style="font-size: x-large;color:rgb(60, 102, 179);"> Chances of a rapid test giving a false positive</h1>
+            <h1 class="rapid">Rapid tests rarely give a false positive result. A false positive is when you test positive for COVID-19 when you don’t actually have it.
+
+               <br style="margin-bottom: 3cm;"> In the March 2021 review of studies mentioned earlier, the researcher found that rapid tests correctly gave a negative COVID-19 result in 99.6 percent of people</h1>
+
+            <h1 class="rapid" style="font-size: large;color:rgba(20, 60, 236, 0.952);" >What are the advantages of rapid tests  ?</h1>
+
+            <ul style=" font-family: 'Architects Daughter', cursive;
+            font-weight: bold;
+            font-size: 600;
+            margin-left: 2cm;">
+                <li> (i)Fast results in 10-15 minutes.</li>
+                <li>(ii)High detection efficiency: simultaneous monitoring of IgM and IgG.</li>
+                <li>(iii)Detection without any test equipment.</li>
+                <li>(iv)Easy to use, it is compatible with serum / whole blood / plasma.</li>
+                <li>(v)Storage at room temperature.</li>
+              </ul> 
+
+
+  <hr style="height: 2cm;color: red;margin-top: 0.5cm;">
+  
+  <h1 class="rapid">
+    A sample can be positive if IgM and / or IgG antibodies are present.</h1>
+    <h1 class="rapid" style="margin-top: 0.9cm;">There are different cassettes for rapid tests. In general, for the qualitative detection of IgG and IgM at the same time, there are 3 different
+         lines: one for IgG, one for IgM and one for control.</h1>
+
+
+    
+  
+  <div class="rapidimage"><img src="{%static 'images/rapid3.jpg' %}" alt="image not found" style="border-radius: 2cm;margin-left: 4cm;margin-top: 1cm;margin-bottom: 1cm;"></div>
+
+  <h1 class="rapid" style="font-weight: bold;font-size: xx-large;text-transform: capitalize;text-align: center;">about covid vaccine</h1>
+  
+  
+  
+  <div class="vacccine"> 
+      <img src="{% static 'images/vaccine.jpeg' %}"  alt="image not found">
+ </div>
+ <a href="https://selfregistration.cowin.gov.in/"> <button class="register">vaccine registration</button></a>
+<a href="https://www.gavi.org/covax-facility?gclid=CjwKCAjwtJ2FBhAuEiwAIKu19gP
+7j9Q3ua2BD_6itK5zENscPWst_7263wEzN8MGim_sJv4iE-BXxRoCBGAQAvD_BwE"><h1 class="covax">COVID-19 Vaccines Global Access, abbreviated as COVAX, is a worldwide initiative aimed at equitable access to COVID-19 vaccines directed by Gavi, the Vaccine Alliance, the Coalition for Epidemic 
+    Preparedness Innovations, and the World Health</h1></a>
+<h1 class="rapid" style="color: rgb(206, 94, 50);">How do vaccines work?</h1>
+<p class="para">Germs are all around us, both in our environment and in our bodies. When a person is susceptible and they encounter a harmful organism, it can lead to disease and death.
+
+    The body has many ways of defending itself against pathogens (disease-causing organisms). Skin, mucus, and cilia (microscopic hairs that move debris away from the lungs) all work as physical barriers to prevent pathogens from entering the body in the first place. 
+    
+    When a pathogen does infect the body, our body’s defences, called the immune system, are triggered and the pathogen is attacked and destroyed or overcome.</p>
+  <div class="frame1"> 
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/uWGTciX795o"
+       title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+</div>
+<h1 class="rapid" style="color: lightseagreen;">The body's natural response</h1>
+<p class="para1">Once the antigen-specific antibodies are produced, they work 
+    with the rest of the immune system to destroy the pathogen 
+    and stop the disease. Antibodies to one pathogen generally don’t
+     protect against another pathogen except when two pathogens are very
+      similar to each other, like cousins. Once the body produces antibodies 
+      in its primary response to an antigen, it also creates antibody-producing 
+      memory cells, which remain alive even after the pathogen is defeated by the 
+      antibodies. If the body is exposed to the same pathogen more than once, the 
+      antibody response is much faster and more effective than the first time around
+       because the memory cells are 
+    at the ready to pump out antibodies against that antigen.</p>
+    <div class="imag1">
+        <img src="{% static 'images/body1.jpg'%}" alt="">
+    </div>
+    <h1 class="rapid" style="color: hotpink;">How vaccines help</h1>
+    <p class="para1">Vaccines contain weakened or inactive parts of a particular organism (antigen) that triggers an immune response within the body. Newer vaccines contain the blueprint for producing antigens rather than the antigen itself. 
+        Regardless of whether the vaccine is made up of the antigen itself or the blueprint so that the body will produce the antigen, this weakened version will not cause the disease in the person receiving the vaccine, 
+        but it will prompt their immune system to respond much as it would have on its first reaction to the actual pathogen.</p>
+<div class="imag2">
+    <img src="{% static 'images/body5.jpg'%}" alt="image not found">
+</div>
+{%endblock%}
